@@ -1,0 +1,28 @@
+{
+    "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
+    "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.podmancompose",
+    "editor.accessibilitySupport": "on",
+
+    // Python & Pylance configurations
+    "python.analysis.typeCheckingMode": "basic",
+    "python.defaultInterpreterPath": ".venv/bin/python",
+
+    // Set Ruff as the default formatter
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    // Pytest configuration
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+
+    // General Editor Quality of Life
+    "editor.rulers": [88],
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+}
