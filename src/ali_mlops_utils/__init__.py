@@ -1,3 +1,3 @@
-from .pipeline import summarize_data  # noqa: F401
+from .pipeline import summarize_data
 
 __all__ = ["summarize_data"]
